@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>PAXONATA – Coming Soon</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    html, body {
+      height: 100%;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      background: #050509;
+      color: #f5f5f5;
+    }
+    body {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 24px;
+    }
+    .wrap {
+      max-width: 520px;
+    }
+    .logo {
+      font-size: 32px;
+      letter-spacing: 0.12em;
+      margin-bottom: 16px;
+    }
+    .logo span.omega {
+      font-family: "Segoe UI Symbol", system-ui, sans-serif;
+    }
+    .tagline-en {
+      font-size: 16px;
+      line-height: 1.6;
+      margin-bottom: 10px;
+      color: #d3d7ff;
+    }
+    .tagline-ko {
+      font-size: 14px;
+      line-height: 1.7;
+      margin-bottom: 28px;
+      color: #c7c7d9;
+    }
+    .pill {
+      display: inline-block;
+      padding: 6px 14px;
+      border-radius: 999px;
+      font-size: 12px;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      border: 1px solid rgba(255,255,255,0.18);
+      color: #a7ffeb;
+      margin-bottom: 18px;
+    }
+    .soon {
+      font-size: 18px;
+      margin-bottom: 16px;
+    }
+    .contact {
+      font-size: 14px;
+      color: #b0b0c0;
+    }
+    .email {
+      color: #8ad4ff;
+      text-decoration: none;
+    }
+    .email:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="pill">Digital creative studio</div>
+
+    <div class="logo">
+      PAX<span class="omega">Ω</span>NATA
+    </div>
+
+    <p class="tagline-en">
+      PAXONATA is a one-person creative studio and directing hub,
+      building web, brand, and content systems for ambitious businesses.
+    </p>
+
+    <p class="tagline-ko">
+      PAXONATA는 웹·브랜딩·콘텐츠·자동화를 설계하는
+      1인 크리에이티브 디렉팅 스튜디오입니다.
+    </p>
+
+    <p class="soon">Full site is coming soon.</p>
+
+    <p class="contact">
+      프로젝트 및 협업 문의:
+      <a class="email" href="mailto:paxonata@gmail.com">paxonata@gmail.com</a>
+    </p>
+  </div>
+</body>
+</html>
