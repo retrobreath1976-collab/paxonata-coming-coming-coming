@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <title>PAXONATA : Retro's Playground</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; background: #050816; color: #f0f4ff; min-height: 100vh; }
+    header { padding: 20px 32px; border-bottom: 1px solid rgba(255,255,255,0.07); display: flex; justify-content: space-between; align-items: center; }
+    .logo { font-weight: 800; letter-spacing: 0.22em; font-size: 13px; text-transform: uppercase; background: linear-gradient(90deg, #a78bfa, #60a5fa); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+    .tag { font-size: 11px; opacity: 0.5; letter-spacing: 0.06em; }
+    main { max-width: 1000px; margin: 0 auto; padding: 56px 24px 80px; }
+    .hero { margin-bottom: 48px; }
+    .hero h1 { font-size: 38px; font-weight: 800; line-height: 1.15; margin-bottom: 14px; background: linear-gradient(135deg, #e2e8f0 30%, #94a3b8); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+    .hero p { font-size: 15px; color: #94a3b8; line-height: 1.7; max-width: 520px; }
+    .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 20px; }
+    .card { border-radius: 20px; border: 1px solid rgba(255,255,255,0.08); padding: 24px 22px; background: linear-gradient(145deg, rgba(120,119,198,0.12), rgba(15,23,42,0.9)); position: relative; overflow: hidden; transition: transform 0.2s, box-shadow 0.2s; }
+    .card:hover { transform: translateY(-4px); box-shadow: 0 24px 60px rgba(0,0,0,0.6); }
+    .card::before { content: ''; position: absolute; inset: 0; border-radius: 20px; background: radial-gradient(ellipse at top left, rgba(167,139,250,0.08), transparent 60%); pointer-events: none; }
+    .pill { display: inline-flex; align-items: center; gap: 6px; font-size: 10px; font-weight: 600; letter-spacing: 0.08em; padding: 4px 10px; border-radius: 999px; background: rgba(15,23,42,0.85); border: 1px solid rgba(148,163,184,0.25); color: #94a3b8; text-transform: uppercase; margin-bottom: 14px; }
+    .pill-dot { width: 6px; height: 6px; border-radius: 999px; background: #4ade80; flex-shrink: 0; }
+    .pill-dot.soon { background: #f59e0b; }
+    .card h2 { font-size: 18px; font-weight: 700; margin-bottom: 8px; color: #f1f5f9; }
+    .card p { font-size: 13px; color: #94a3b8; line-height: 1.65; margin-bottom: 18px; }
+    .btn { display: inline-flex; align-items: center; gap: 6px; font-size: 12px; font-weight: 600; padding: 8px 14px; border-radius: 999px; border: 1px solid rgba(167,139,250,0.45); text-decoration: none; color: #c4b5fd; letter-spacing: 0.04em; transition: background 0.15s, border-color 0.15s; }
+    .btn:hover { background: rgba(167,139,250,0.12); border-color: rgba(167,139,250,0.7); }
+    .btn-arrow { font-size: 14px; }
+    footer { max-width: 1000px; margin: 0 auto; padding: 0 24px 32px; font-size: 11px; color: #334155; letter-spacing: 0.06em; }
+    @media (max-width: 600px) { .hero h1 { font-size: 26px; } header { padding: 16px 20px; } main { padding: 40px 16px 60px; } }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo">PAXONATA</div>
+    <div class="tag">Retro Breath &middot; Personal Playground</div>
+  </header>
+
+  <main>
+    <div class="hero">
+      <h1>Retro의 세계관<br />실험실</h1>
+      <p>웹&middot;디자인&middot;성경&middot;스토리텔링이 뒤섞인 개인 놀이터.<br />아직 공사 중이지만, 여기서 하나씩 실험해 나갑니다.</p>
+    </div>
+
+    <div class="grid">
+      <section class="card">
+        <div class="pill"><span class="pill-dot"></span>Active Lab</div>
+        <h2>Bible Lab</h2>
+        <p>헬라어 원문, 번역 대조, 주석을 한 화면에서 보면서 성경을 탐구하는 인터랙티브 스터디 툴.</p>
+        <a class="btn" href="/bible-study-v6.html">스터디 툴 열기 <span class="btn-arrow">&rarr;</span></a>
+      </section>
+
+      <section class="card">
+        <div class="pill"><span class="pill-dot soon"></span>Coming Soon</div>
+        <h2>Design Lab</h2>
+        <p>브랜딩, 타이포그래피, 인터랙션을 실험하는 Web/UI 스케치 공간.</p>
+      </section>
+
+      <section class="card">
+        <div class="pill"><span class="pill-dot soon"></span>Coming Soon</div>
+        <h2>Story &amp; Video Lab</h2>
+        <p>내러티브, 보이스오버, 사운드가 섞인 짧은 실험 영상들.</p>
+      </section>
+
+      <section class="card">
+        <div class="pill"><span class="pill-dot soon"></span>Coming Soon</div>
+        <h2>E-commerce Lab</h2>
+        <p>Shopify 기반 브랜드 스토어 실험 & 쇼케이스.</p>
+      </section>
+    </div>
+  </main>
+
+  <footer>
+    &copy; Retro Breath &middot; PAXONATA &middot; Still under construction.
+  </footer>
+</body>
+</html>
